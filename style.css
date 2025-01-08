@@ -1,11 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
+
 body{
     background: #548687;
     text-align: center;
+    font-family: "Playwrite AU SA", serif;
+
 }
 .container {
     height: 70vh;
@@ -31,6 +36,7 @@ body{
     box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3) ;
     font-size: 8vmin;
     color: #b0413e;
+    background: #ffffc7;
 }
 .reset{
     padding: 1rem;
