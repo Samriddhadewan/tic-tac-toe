@@ -53,6 +53,12 @@ p{
     border: none;
     font-size: 0.9rem;
 }
+#button-container {
+    margin-top: 4vmin;
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
 .hide{
     display: none;
 }
