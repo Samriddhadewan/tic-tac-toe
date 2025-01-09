@@ -27,6 +27,26 @@ const showWinner = (winner) => {
     disabled();
 
 }
+const showDraw = () =>{
+    msgContainer.innerText = `The game is Draw`;
+    msgContainer.classList.remove("hide");
+    msgContainer.classList.add("msg-height");
+}
+
+const resetGame = () => {
+    enabled();
+    for(let box of Boxes){
+        box.innerText = "";
+    }
+    turnO = true;
+    msgContainer.classList.add('hide');
+
+}
+const enabled = () => {
+    for(let btn of Boxes){
+        btn.disabled = false;
+    }
+}
 
 const disabled = () => {
     for(let btn of Boxes){
@@ -65,10 +85,12 @@ const checkWinner = () => {
 
         if(pos1Val != "" && pos2Val != "" && pos3Val != ""){
             if(pos1Val === pos2Val && pos2Val === pos3Val){
-                console.log('winner', pos1Val);
                 showWinner(pos1Val);
             }
         }
 
     }
 }
+
+document.getElementById("reset").addEventListener('click', resetGame)
+document.getElementById("new-game").addEventListener('click', resetGame)
