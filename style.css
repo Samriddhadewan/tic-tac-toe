@@ -13,17 +13,18 @@ body{
 
 }
 .main{
-    height: 100vh;
+    height: 95vh;
+    border: 1px solid red;
 }
 .container {
-    height: 70vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .game {
-    height: 60vmin;
-    width: 60vmin;
+    height: 50vmin;
+    width: 50vmin;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,22 +33,22 @@ body{
 
 }
 .box {
-    height: 15vmin;
-    width: 15vmin;
+    height: 13vmin;
+    width: 13vmin;
     border-radius: 1rem;
     border: none;
     box-shadow: 0 0 1rem rgb(0, 0, 0, 0.3) ;
-    font-size: 8vmin;
+    font-size: 6vmin;
     color: #b0413e;
     background: #ffffc7;
 }
 
 p{
-    font-size: 4vmin;
+    font-size: 3vmin;
     font-weight: 700;
 }
 .button{
-    padding: 1rem;
+    padding: 0.8rem;
     border-radius: 0.5rem;
     border: none;
     font-size: 0.9rem;
@@ -56,5 +57,5 @@ p{
     display: none;
 }
 .msg-height{
-    height: 10vmin;
+    height: 7vmin;
 }
