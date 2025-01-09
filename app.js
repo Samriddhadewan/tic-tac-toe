@@ -24,7 +24,14 @@ const showWinner = (winner) => {
     msgContainer.innerText = `Winner is ${winner}`;
     msgContainer.classList.remove("hide");
     msgContainer.classList.add("msg-height");
+    disabled();
 
+}
+
+const disabled = () => {
+    for(let btn of Boxes){
+        btn.disabled = true;
+    }
 }
 
 
